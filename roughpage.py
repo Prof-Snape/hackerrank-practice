@@ -1,6 +1,7 @@
 s = "aaaDSDss"
+b = ""
 
 for i in s:
     if i.isupper():
-        i.lower()
-        print(i)
+        b += i.lower()
+print(b)
