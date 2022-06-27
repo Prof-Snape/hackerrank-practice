@@ -1,14 +1,19 @@
-def count_substring(string, sub_string):
-    a = 0
-    for i in range(len(string)):
-        if string[i:].startswith(sub_string):
-            a += 1
-    return a
+a = "aa bbbb cccc afak dasd dasd das 12e"
 
+for x in range(len(a)):
+    if a[x] == " ":
+        b = a[0:x]
+        b = b.capitalize()
+        break
 
-if __name__ == '__main__':
-    string = input().strip()
-    sub_string = input().strip()
+for i in range(len(a)):
+    if a[i] == " ":
+        c = a[i+1:]
+        c = c.capitalize()
+        for x in range(len(c)):
+            if c[x] == " ":
+                c = c[:x]
+                break
+        b += " " + c
 
-    count = count_substring(string, sub_string)
-    print(count)
+print(b)
