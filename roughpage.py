@@ -1,19 +1,11 @@
-a = "aa bbbb cccc afak dasd dasd das 12e"
+x = []
+a = int(input())
+for i in range(1, a + 1):
+    b, c = input().split()
+    b = int(b)
+    c = int(c)
+    d = b * c
+    x.append(d)
 
-for x in range(len(a)):
-    if a[x] == " ":
-        b = a[0:x]
-        b = b.capitalize()
-        break
-
-for i in range(len(a)):
-    if a[i] == " ":
-        c = a[i+1:]
-        c = c.capitalize()
-        for x in range(len(c)):
-            if c[x] == " ":
-                c = c[:x]
-                break
-        b += " " + c
-
-print(b)
+for y in x:
+    print(y)
