@@ -1,3 +1,9 @@
+# Chef has an array A of length N. In one operation, Chef can choose any two distinct indices i,j (1≤i,j≤N,
+# i!=j) and either change A_i to A_j or change A_j to A_i. Find the minimum number of operations required to make
+# all the elements of the array equal.
+
+# URL: https://www.codechef.com/submit/PAIREQ?tab=statement
+
 result = []
 
 for x in range(int(input())):

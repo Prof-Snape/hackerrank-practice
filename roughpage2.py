@@ -1,18 +1,17 @@
-# def count_substring(string, sub_string):
-#     a = 0
-#     for b in range(len(string)):
-#         if sub_string in string[b:]:
-#             a += 1
-#     return a
+a = ["63 32 2"]
+b = []
+w = 0
 
+a1 = str(*a)
 
-a = "ablkljojabdwwd"
-b = "ab"
-c = 0
-d = len(a)
-print(a[1:])
+for i in range(len(a1)):
+    if a1[i] == " ":
+        w1 = int(a1[w:i])
+        b.append(w1)
+        w = i + 1
 
-for i in range(d):
-    if a[i:].startswith(b):
-        c += 1
-print(c)
+w1 = int(a1[w:len(a1)])
+b.append(w1)
+
+b.sort()
+print(b)
