@@ -3,9 +3,10 @@
 # You can return the answer in any order.
 
 # URL: https://leetcode.com/problems/two-sum/
+# TODO: comeback when more fluent with python class.
 
 # If we are sure that elements of array is digits separated by whitespace then a shorter version of the code would be
-# to remove line 10 out from comment and put line 12 to line 26 in comment.
+# to remove line 11 out from comment and put line 13 to line 27 in comment.
 
 # given_array = [int(x) for x in input().split()]
 
