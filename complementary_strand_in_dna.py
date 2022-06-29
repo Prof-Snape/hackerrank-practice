@@ -14,9 +14,11 @@ result = []
 test_case = int(input())
 
 for i in range(test_case):
+
     length_of_dna = int(input())
     dna = input()
     complementary_dna = ""
+
     for j in range(length_of_dna):
         if dna[j] == "A":
             complementary_dna += "T"
