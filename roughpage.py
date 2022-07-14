@@ -1,6 +1,4 @@
-b = []
-
-for i in range(3):
-    b.insert(0, input())
-
-print(*b)
+i = 0
+while i < 201:
+    print("Hello World")
+    i += 1
